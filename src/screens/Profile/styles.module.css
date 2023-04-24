@@ -1,0 +1,533 @@
+.profile {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.containerFront {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 45px;
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.containerFront img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.containerAddPictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(92, 92, 92, 1);
+  border-radius: 100px;
+  height: 75px;
+  width: 75px;
+  cursor: pointer;
+  right: 7%;
+  bottom: 15%;
+}
+
+.containerAddPictures:hover {
+  background-color: #757373;
+}
+
+.containerProfile {
+  position: absolute;
+  height: 190px;
+  width: 190px;
+  border-radius: 100px;
+  cursor: pointer;
+  bottom: -8%;
+  left: 8%;
+}
+
+.containerProfile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100px;
+  position: relative;
+}
+
+.containerAddPicturesProfile {
+  bottom: 0;
+  right: 1px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(92, 92, 92, 1);
+  border-radius: 100px;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.containerAddPicturesProfile img {
+  object-fit: contain;
+  height: 13px;
+}
+
+.containerAddPicturesProfile:hover {
+  background-color: #757373;
+}
+
+.row {
+  display: flex;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.containerTextsProfile {
+  display: flex;
+  width: 50%;
+  margin-top: 60px;
+  padding: 10px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.containerTextsProfile h3 {
+  font-family: "GothamBold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+}
+
+.containerTextsProfile p {
+  margin-top: 10px;
+  width: 80%;
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 20px;
+  line-height: 143.52%;
+  letter-spacing: -0.3px;
+}
+
+.containerUbication {
+  display: flex;
+  gap: 10px;
+}
+
+.containerUbication p {
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+}
+
+.containerUbication img {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.containerBoxs {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-top: 45px;
+  gap: 1px;
+  color: #2d2d2d;
+  margin-bottom: 87px;
+}
+
+.box {
+  display: flex;
+  height: 80px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.box:hover {
+  /* background-color: #b4b4b4; */
+  border: solid 1px rgb(223, 130, 223);
+}
+
+.box h3 {
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 20px;
+  line-height: 158.02%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+}
+
+/*/ notificatioooooooon /*/
+
+.boxNotification {
+  display: flex;
+  height: 80px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.boxNotification:hover {
+  /* background-color: #b4b4b4; */
+  border: solid 1px rgb(223, 130, 223);
+}
+
+.boxNotification h3 {
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 20px;
+  line-height: 158.02%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+}
+
+.boxActive {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  cursor: pointer;
+  background-color: white;
+  gap: 10px;
+}
+
+.scroll {
+  max-height: 370px;
+  overflow: hidden;
+}
+
+.scroll:hover {
+  overflow-y: scroll;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h3 {
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 20px;
+  line-height: 158.02%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+}
+
+.length {
+  display: flex;
+  gap: 10px;
+}
+
+.colo {
+  color: red;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+}
+
+.content:hover {
+  background-color: rgb(226, 222, 222);
+  border-radius: 5px;
+}
+
+.containerImg {
+  width: 40%;
+  height: 110px;
+}
+
+.containerImg img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerText {
+  padding: 20px 0px;
+  width: 60%;
+}
+
+.containerText h3 {
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 15px;
+  line-height: 158.02%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+  margin-bottom: 10px;
+}
+.containerText h4 {
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 14px;
+  line-height: 158.02%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+}
+
+.rowImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.containerIm {
+}
+
+.containerIm img {
+  transform: rotate(88deg);
+}
+
+.borrar:hover {
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+/* ////////////////////////////////////// */
+
+.logout {
+  display: flex;
+  height: 95px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.logout h3 {
+  font-family: "GothamBook";
+  color: red;
+  font-style: normal;
+  font-weight: 325;
+  font-size: 20px;
+  line-height: 158.02%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+}
+
+.logout:hover {
+  border: solid 1px rgb(223, 130, 223);
+  /* background-color: #b4b4b4; */
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .containerFront {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  .containerTextsProfile {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .containerBoxs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .containerProfile {
+    width: 120px;
+    height: 120px;
+    bottom: -3%;
+  }
+
+  .containerAddPicturesProfile {
+    width: 30px;
+    height: 30px;
+  }
+
+  .containerTextsProfile h3 {
+    font-size: 17px;
+  }
+
+  .containerTextsProfile p {
+    font-size: 14px;
+  }
+
+  .containerAddPicturesProfile img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .containerAddPictures {
+    width: 40px;
+    height: 40px;
+    bottom: 11%;
+  }
+
+  .box {
+    height: 50px;
+  }
+
+  .box img {
+    height: 12px;
+  }
+
+  .box h3 {
+    font-size: 14px;
+  }
+
+  .logout {
+    height: 50px;
+  }
+
+  .logout h3 {
+    font-size: 14px;
+  }
+
+  /*/ notificatioooooooon /*/
+
+  .boxNotification {
+    height: 50px;
+  }
+
+  .boxNotification img {
+    height: 12px;
+  }
+
+  .boxNotification:hover {
+    /* background-color: #b4b4b4; */
+    border: solid 1px rgb(223, 130, 223);
+  }
+
+  .boxNotification h3 {
+    font-size: 14px;
+  }
+
+  .boxActive {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    cursor: pointer;
+    background-color: white;
+    gap: 10px;
+  }
+
+  .boxActive img {
+    height: 12px;
+  }
+
+  .scroll {
+    max-height: 370px;
+    overflow: hidden;
+  }
+
+  .scroll:hover {
+    overflow-y: scroll;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title h3 {
+    font-size: 14px;
+  }
+
+  .length {
+    display: flex;
+    gap: 7px;
+  }
+
+  .colo {
+    color: red;
+  }
+
+  .containerIm {
+    transform: rotate(88deg);
+  }
+
+  .content {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .content:hover {
+    background-color: rgb(226, 222, 222);
+    border-radius: 5px;
+  }
+
+  .containerImg {
+    width: 40%;
+    height: 110px;
+  }
+
+  .containerImg img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .containerText {
+    padding: 5px 5px;
+    width: 60%;
+  }
+
+  .containerText h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .containerText h4 {
+    font-size: 12px;
+  }
+  .rowImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .containerIm img {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,48 @@
+/*                          Carousel                                                           */
+
+.carousel {
+  width: 100%;
+  height: auto;
+  margin-bottom: 64px;
+  margin-top: 50px;
+}
+
+.items {
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.slider {
+  height: auto;
+}
+.containerCarousel button {
+  background: none;
+  display: none;
+}
+
+.containerCarousel:hover button {
+  transition: all 0.5s;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+.containerCarousel {
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding-left: 10px;
+  }
+  .carousel {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .slider {
+  }
+
+  .items {
+  }
+}

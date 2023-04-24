@@ -1,0 +1,131 @@
+.containerCard {
+  display: flex;
+  background-color: var(--bg-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  height: 100%;
+  width: 295px;
+  position: relative;
+}
+
+.label {
+  display: flex;
+  width: 78%;
+  height: 20px;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  top: 1rem;
+  left: 1.5rem;
+  gap: 8px;
+}
+
+.label img {
+  height: 19px;
+  width: 19px;
+}
+
+.logoName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.logoName h6 {
+  font-family: "Arboria";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 143.52%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+  color: white;
+}
+
+.duration {
+}
+
+.duration h4 {
+  font-family: "Arboria";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 143.52%;
+  letter-spacing: -0.3px;
+  color: white;
+}
+
+.containerImg {
+  width: 100%;
+  height: 100%;
+}
+
+.containerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  border-radius: 8px;
+}
+
+.containerTexts {
+  position: absolute;
+  color: white;
+  z-index: i;
+  bottom: 1rem;
+  left: 1.5rem;
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.containerTexts h6 {
+  font-family: "Arboria";
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
+}
+
+.containerTexts p {
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 12px;
+  line-height: 143.52%;
+  letter-spacing: -0.3px;
+  color: #e0e0e0;
+  margin-top: 1px;
+}
+
+@media screen and (max-width: 600px) {
+  .containerCard {
+    width: 225px;
+    height: 100%;
+  }
+
+  .containerTexts h6 {
+    font-size: 15px;
+  }
+
+  .containerTexts p {
+    font-size: 11px;
+    line-height: 123.52%;
+  }
+
+  .label img {
+    height: 15px;
+    width: 15px;
+  }
+
+  .label {
+  }
+
+  .label h6 {
+    font-size: 11px;
+  }
+}

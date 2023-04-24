@@ -1,0 +1,383 @@
+.navbar {
+  background-color: var(--bg-color2);
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px 4%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbarPayment {
+  background-color: white;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 5%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.imgnone {
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 16px;
+  line-height: 10px;
+}
+
+.link :hover {
+  color: black;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 600px; */
+  width: 50%;
+  padding: 10px 0px;
+  background: rgb(248, 247, 247);
+  border-radius: 5px;
+}
+
+.search img {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.search form {
+  width: 95%;
+}
+
+.search input {
+  width: 98%;
+  height: 30px;
+  padding: 12px 15px;
+  border: none;
+  background: none;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(154, 154, 154, 1);
+  font-family: "GothamBook";
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 158.02%;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 50px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo h2 {
+  font-family: "Arboria";
+  color: #016dca;
+}
+
+.route {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+}
+
+.profile:hover {
+  border: 2px solid #b0afae;
+}
+
+.profileNoti {
+  border: 0.5px solid gray;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 100px;
+  top: 2px;
+  right: 2px;
+}
+
+.profile img {
+  color: rgba(133, 144, 169, 1);
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.notification {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.notification img {
+  cursor: pointer;
+}
+
+.notification:hover {
+  background-color: #e6e6e6;
+}
+
+.absolute {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  bottom: 1;
+  top: 2.4rem;
+  left: 1;
+  right: 1rem;
+  width: 150px;
+  border-radius: 8px 0px 8px 5px;
+  gap: 5px;
+  background-color: #646464;
+  color: var(--text-color);
+}
+
+.absolute h5 {
+  width: 100%;
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 12px;
+  line-height: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 53px;
+    padding: 7px 3%;
+    gap: 0px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .imgnone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin: 0px 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .container p {
+    font-family: "helvetica";
+    font-size: 8px;
+  }
+
+  .imgnone img {
+    height: 15px;
+  }
+
+  .route {
+    display: none;
+  }
+
+  .profile {
+    height: 25px;
+    width: 25px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .search input {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .navbar {
+    padding: 7px 3%;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+
+  .notification img {
+    height: 22px;
+    width: auto;
+  }
+
+  .profile {
+    height: 25px;
+    width: 25px;
+  }
+
+  .profileNoti {
+    width: 6px;
+    height: 6px;
+    top: 1px;
+    right: 1px;
+  }
+
+  .search {
+    width: auto;
+    background-color: white;
+  }
+
+  .search img {
+    margin-right: 0px;
+    cursor: pointer;
+  }
+
+  .search input {
+    display: none;
+  }
+  .link p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 840px) {
+  .navbar {
+    padding: 7px 3%;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo {
+    width: 90px;
+    height: 40px;
+  }
+
+  .notification img {
+    height: 25px;
+    width: auto;
+  }
+
+  .row {
+    align-items: center;
+    gap: 7px;
+  }
+
+  .profile {
+    height: 30px;
+    width: 30px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .search {
+    height: 30px;
+  }
+
+  .link p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar {
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .search {
+    width: auto;
+  }
+
+  .absolute {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    bottom: 1;
+    right: 1rem;
+    width: 150px;
+    gap: 5px;
+    background-color: #646464;
+    color: var(--text-color);
+  }
+
+  .absolute h5 {
+    width: 100%;
+    font-family: "GothamBook";
+    font-style: normal;
+    font-weight: 325;
+    font-size: 11px;
+    line-height: 10px;
+  }
+
+  .navbarPayment {
+    padding: 10px 5%;
+  }
+}

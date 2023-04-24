@@ -1,0 +1,218 @@
+/* estilos modal /*
+
+/* Modal */
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.modalFondo {
+  background-color: rgba(15, 15, 15, 0.7);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  position: fixed;
+  z-index: 10000;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: var(--bg-color); */
+  background-color: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  max-height: 442px;
+  width: 80%;
+  outline: none;
+  padding: 10px;
+  top: 25%;
+  bottom: 25%;
+  position: absolute;
+  z-index: 10000;
+}
+
+/* interna de modal */
+.modal {
+  width: 40%;
+  padding: 40px;
+  margin: 0 auto;
+  z-index: 10000;
+}
+
+.containerTitulo {
+  margin: 20px auto 52px 0px;
+}
+
+.containerTitulo h2 {
+  font-family: "Arboria";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+  color: #151515;
+}
+
+.containerButton {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-bottom: 40px;
+}
+
+.containerButton button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  height: 42px;
+  width: auto;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  font-family: "GothamBold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 158.02%;
+  letter-spacing: -0.3px;
+}
+
+.mund {
+  background: var(--button-color);
+}
+
+.mund:hover {
+  background: var(--hover-color);
+}
+
+.goo {
+  gap: 10px;
+  background-color: #353434;
+  /* background: linear-gradient(206.43deg, #016b7c 0%, #8c9780 65%); */
+}
+
+.goo:hover {
+  background-color: #1d1c1c;
+}
+
+.containerTexts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 22px;
+}
+
+.containerTexts h5 {
+  font-family: "Arboria";
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+  text-decoration-line: underline;
+  cursor: pointer;
+  color: #151515;
+}
+
+.containerTexts p {
+  color: #7c7c7c;
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 14px;
+  line-height: 158.02%;
+  letter-spacing: -0.3px;
+}
+
+@media screen and (max-width: 880px) {
+  .modal {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .containerTitulo {
+    margin: 29px auto 36px 0px;
+  }
+
+  .containerTitulo h2 {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+  }
+
+  .containerButton {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-bottom: 40px;
+  }
+
+  .containerButton button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    height: 38px;
+    width: auto;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    font-family: "GothamBold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 158.02%;
+    letter-spacing: -0.3px;
+  }
+
+  .containerTexts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 22px;
+  }
+
+  .containerTexts h5 {
+    font-family: "Arboria";
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.3px;
+    text-decoration-line: underline;
+    cursor: pointer;
+    color: #151515;
+  }
+
+  .containerTexts p {
+    color: #7c7c7c;
+    font-family: "GothamBook";
+    font-style: normal;
+    font-weight: 325;
+    font-size: 12px;
+    line-height: 158.02%;
+    letter-spacing: -0.3px;
+  }
+}

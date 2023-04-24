@@ -1,0 +1,247 @@
+.containerRegister {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: 100vh; */
+  color: var(--text-color);
+  /* background-color: var(--bg-color2); */
+  padding-top: 100px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color2);
+}
+
+.form {
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.containerInputDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 19px;
+  height: 42px;
+  padding: 11px 13px 11px 13px;
+}
+
+.date {
+  border: none;
+  background-color: white;
+  color: #9e9d9d;
+}
+
+.containerInputDate h6 {
+  /* font-family: "ArboriaBold"; */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 325;
+  /* font-size: 16px; */
+  font-size: 14px;
+  color: #9e9d9d;
+}
+
+.containerInputSexo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  height: 42px;
+  padding: 11px 13px 11px 13px;
+}
+
+.containerInputSexo h6 {
+  /* font-family: "ArboriaBold"; */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 325;
+  font-size: 14px;
+  /* font-size: 16px; */
+  color: #9e9d9d;
+}
+.sexo {
+  height: auto;
+  width: 50%;
+  border: none;
+  color: #9e9d9d;
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 14px;
+}
+
+.sexo:focus {
+  outline: none;
+}
+
+.form ::placeholder {
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 14px;
+  /* font-size: 16px; */
+}
+
+.containerRegister h4 {
+  margin: 0px auto 45px 0px;
+  font-size: 24px;
+  font-family: "Arboria";
+  line-height: 28px;
+  letter-spacing: -0.3px;
+}
+
+.containerInput {
+  display: flex;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 19px;
+  height: 42px;
+  padding: 11px 13px 11px 13px;
+}
+
+.containerInput img {
+  width: 18px;
+  height: 20px;
+}
+
+.containerInput input {
+  gap: 10px;
+  width: 97%;
+  background: white;
+  border: none;
+}
+
+.containerButton button {
+  margin: 15px 0px 31px 0px;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  height: 42px;
+  font-family: "GothamBold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 158.02%;
+  letter-spacing: -0.3px;
+  background: var(--button-color);
+}
+
+.containerButton button:hover {
+  background: var(--hover-color);
+}
+
+.politic p {
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 14px;
+  line-height: 158.5%;
+  letter-spacing: -0.3px;
+}
+
+.politic b {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0px 5px;
+}
+
+.error {
+  color: #e42530;
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 15px;
+}
+
+.link {
+  color: var(--text-color);
+  margin-left: 7px;
+}
+
+@media screen and (max-width: 1000px) {
+  .containerRegister {
+    width: 80%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .form ::placeholder {
+    font-family: "GothamBook";
+    font-style: normal;
+    font-weight: 325;
+    /* font-size: 14px; */
+    font-size: 12px;
+  }
+
+  .containerRegister h4 {
+    margin: 10px auto 45px 0px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .containerInputDate {
+    width: 50%;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 19px;
+    height: 42px;
+    padding: 7px 5px 7px 5px;
+  }
+
+  .containerInputSexo {
+    width: 50%;
+  }
+
+  .date {
+    border: none;
+    width: 100%;
+  }
+
+  .containerInputDate h6 {
+    display: none;
+  }
+
+  .containerInputSexo h6 {
+    display: none;
+  }
+  .sexo {
+    height: auto;
+    width: 100%;
+    border: none;
+    font-size: 12px;
+    background-color: white;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .error {
+    font-size: 13px;
+  }
+}

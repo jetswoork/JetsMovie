@@ -1,0 +1,220 @@
+.containerPromo {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: var(--text-color);
+}
+
+.containerCurso {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.containerInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+
+.containerInfo h2 {
+  display: flex;
+  align-items: center;
+  font-family: "Arboria";
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.3px;
+  width: 50%;
+}
+
+.texts {
+  margin-top: 42px;
+}
+
+.texts p {
+  font-family: "GothamBook";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 20px;
+  line-height: 143.52%;
+  letter-spacing: -0.3px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.texts h5 {
+  margin: 40px 0px 27px 0px;
+  font-family: "Arboria";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+}
+
+.containerCard {
+  display: flex;
+  gap: 20px;
+}
+
+.containerCurso h3 {
+  margin-bottom: 35px;
+  font-family: "Arboria";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+}
+
+.banner {
+  width: 100%;
+  height: 40vh;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.creator {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 57px;
+  margin-bottom: 100px;
+}
+
+.containerButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerButton button {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 716px;
+  height: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(209, 58, 115, 0.7) 0%,
+    rgba(228, 37, 48, 0.7) 100%
+  );
+  border-radius: 5px;
+  border: none;
+  font-family: "GothamBold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 158.02%;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: var(--text-color);
+}
+
+.containerButton button:hover {
+  background: var(--hover-color);
+}
+
+@media screen and (max-width: 750px) {
+  .containerPromo {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    color: var(--text-color);
+  }
+
+  .containerCurso {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .containerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .containerInfo h2 {
+    font-size: 20px;
+    width: 70%;
+  }
+
+  .texts {
+    margin-top: 15px;
+    padding: 0px 10px;
+  }
+
+  .banner {
+    width: 100%;
+    height: 35vh;
+  }
+
+  .texts p {
+    font-family: "GothamBook";
+    font-style: normal;
+    font-weight: 325;
+    font-size: 15px;
+    line-height: 143.52%;
+    letter-spacing: -0.3px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  .texts h5 {
+    margin: 20px 0px 8px 0px;
+    font-family: "Arboria";
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+  }
+
+  .containerCurso h3 {
+    margin-bottom: 15px;
+    font-family: "Arboria";
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+  }
+
+  .containerButton {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 80%;
+  }
+
+  .containerButton button {
+    margin: 0 auto;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .creator {
+    padding: 0px 10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+
+/* @media screen and (min-width: 1500px) {
+  .containerCurso {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .creator {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .banner {
+    width: 100%;
+    height: 35vh;
+  }
+} */

@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Arboria";
+  src: local("Arboria"), url("./fonts/Arboria-Bold.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: "GothamBold";
+  src: local("GothamBold"), url("./fonts/GothamBold.otf");
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: local("GothamBook"), url("./fonts/GothamBook.ttf");
+}
+
+:root {
+  --bg-color: #141414;
+  --bg-color2: #484848;
+  --text-color: #ffffff;
+  --button-color: linear-gradient(152.66deg, #016b7c 0%, #2d204f 36%);
+  --hover-color: linear-gradient(152.66deg, #016b7c 0%, #4d3b7a 36%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+input::placeholder {
+  font-family: "Inter", sans-serif !important;
+}
+
+select {
+  font-family: "Inter", sans-serif !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.mainContainer {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 67px;
+  width: auto;
+}
+
+/****************sweetAlert 2 *************/
+
+.custom-title {
+  font-size: 25px !important;
+  font-family: "helvetica" !important;
+}
+
+.custom-text {
+  font-family: "helvetica" !important;
+  font-size: 17px !important;
+}
+
+.custom-button {
+  background-color: "#014550" !important;
+  font-size: 14px !important;
+}
+
+.custom-cancel {
+  background-color: #e42530 !important;
+  font-size: 14px !important;
+}
+
+@media screen and (max-width: 750px) {
+  .modal {
+    height: auto;
+  }
+}
+
+/****************sweetAlert 2 *************/
+
+.animate__animated.animate__zoomIn {
+  --animate-duration: 0.3s !important;
+}
+
+.mercado {
+  font-family: helvetica;
+}
+
+.mercado button {
+  display: block !important;
+}
+
+@media screen and (max-width: 850px) {
+  .mainContainer {
+    padding-top: 53px;
+  }
+
+  .custom-title {
+    font-size: 20px !important;
+  }
+
+  .custom-text {
+    font-size: 14px !important;
+  }
+}
